@@ -40,7 +40,7 @@
 
 <!-- Push section js -->
 <?= $this->section('js') ?>
-<script>
+<script <?= csp_script_nonce() ?>>
     var tableRole = $('#table-role').DataTable({
         processing: true,
         serverSide: true,

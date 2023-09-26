@@ -41,7 +41,7 @@
 
 <!-- Push section js -->
 <?= $this->section('js') ?>
-<script>
+<script <?= csp_script_nonce() ?>>
     var tablePermission = $('#table-permission').DataTable({
         processing: true,
         serverSide: true,

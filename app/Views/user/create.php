@@ -137,7 +137,7 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('js') ?>
-<script>
+<script <?= csp_script_nonce() ?>>
     $('.select').select2();
 </script>
 <?= $this->endSection() ?>

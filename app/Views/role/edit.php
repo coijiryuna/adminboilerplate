@@ -86,7 +86,7 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('js') ?>
-<script>
+<script <?= csp_script_nonce() ?>>
     $('select[name="permission[]"]').bootstrapDualListbox();
 </script>
 <?= $this->endSection() ?>

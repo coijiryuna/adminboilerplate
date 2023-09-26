@@ -43,7 +43,7 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('js') ?>
-<script>
+<script <?= csp_script_nonce() ?>>
     var tableUser = $('#table-user').DataTable({
         processing: true,
         serverSide: true,
